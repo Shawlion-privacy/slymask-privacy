@@ -1,148 +1,236 @@
-# slymask棒球 隐私政策与服务条款
+# SlyMask 棒球 - 隐私政策
+
+**生效日期：2026年2月27日**  
+**最后更新：2026年2月27日**
 
 ---
 
-## 一、隐私政策
+## 一、我们收集哪些信息
 
-最后更新：2026年2月22日
+### 1.1 相机权限（仅 iPhone）
+- **用途**：AR 测距功能、录制投球/挥棒视频
+- **处理方式**：所有视频和图像数据仅在您的设备本地处理，不会上传到任何服务器
+- **技术说明**：使用 Apple ARKit 和 Vision Framework 进行本地分析
 
-### 概述
+### 1.2 相册权限（仅 iPhone）
+- **用途**：选择已有视频进行动作分析
+- **处理方式**：仅读取您选择的视频，所有分析在设备本地完成
 
-slymask棒球（以下简称「本应用」）由刘肖龙（个人开发者）开发与维护。我们高度重视用户隐私保护。本隐私政策用于说明：在您使用本应用的过程中，我们会如何处理与您相关的信息。
+### 1.3 健康数据（仅 Apple Watch）
+- **读取权限**：心率、活动能量消耗
+- **写入权限**：训练记录（时长、卡路里、心率数据）
+- **用途**：
+  - 实时监测训练时的心率
+  - 记录训练消耗的卡路里
+  - 生成训练历史记录
+- **处理方式**：
+  - 所有健康数据存储在 Apple Health App 中，由 iOS 系统管理
+  - 我们不会将健康数据上传到任何服务器
+  - iPhone 和 Watch 之间通过 Apple WatchConnectivity 框架同步数据，数据传输经过加密
 
-### 我们收集/处理的信息
+### 1.4 运动传感器（仅 Apple Watch）
+- **用途**：检测挥棒动作、投球动作
+- **处理方式**：传感器数据仅在 Watch 本地处理，用于动作识别
 
-- **相机权限**：用于 AR 测距功能。相机画面仅用于本地实时测量，不会被本应用上传至任何服务器。
-- **相册权限**：用于选择视频/照片进行动作分析。所选媒体仅在本地设备上处理，不会被上传至任何服务器。
-- **用户内容**：您在应用内创建/导入的内容（如比赛记录、投球九宫格记录、装备清单、导入的视频/照片等）仅用于应用功能本身。
-- 我们不会要求您注册账号；不会收集您的姓名、手机号、通讯录、精确位置；不使用 IDFA 做广告追踪。
+### 1.5 本地存储数据
+- **存储内容**：
+  - 比赛记录
+  - 投球配速图
+  - 装备清单
+  - 训练计划
+  - 免费试用次数
+- **存储方式**：使用 iOS UserDefaults 和本地文件系统，所有数据仅存储在您的设备上
 
-### 我们如何使用信息
-
-- 提供并改进核心功能：比赛记录、动作分析、AR测距、投球九宫格/统计、装备检查、经验库、战术板等。
-- 本应用不做用户画像，不做跨应用/跨网站追踪，不投放个性化广告。
-
-### 数据存储
-
-- 比赛记录、投球九宫格数据、装备清单、偏好设置等默认保存在您的设备本地（UserDefaults/本地文件）。
-- 动作分析所选视频/照片在本地处理。导出的视频会保存在设备本地（或临时目录），是否分享、分享给谁由您自行决定。
-- 订阅状态由 Apple 的 StoreKit 管理。我们无法访问您的 Apple ID、银行卡号等支付信息。
-
-### 第三方服务
-
-- **MediaPipe（Google）**：用于姿态检测，所有计算在设备本地完成，不涉及数据上传。
-- **ARKit（Apple）**：用于测距功能，所有数据在设备本地处理。
-- **StoreKit（Apple）**：用于处理应用内购买与订阅，由 Apple 直接管理。
-
-### 信息共享
-
-- 我们不会向第三方出售您的信息。
-- 除非法律法规要求、司法机关/监管机构依法提出要求，或为保护您/他人的合法权益所必需，否则我们不会向第三方披露您的信息。
-- 当您使用系统分享功能导出内容（例如视频/图片）时，分享对象与范围由您自行选择。
-
-### 您的权利与选择
-
-- **权限管理**：您可以在 iOS「设置」中随时关闭相机/相册权限；关闭后相关功能将无法使用或受限。
-- **删除本地数据**：您可以在应用内删除比赛记录/投球记录等；也可以通过卸载本应用来清除本地保存的数据。
-- 如您对隐私相关问题有疑问，可通过下方联系方式联系我们。
-
-### 儿童隐私
-
-本应用适合所有年龄段用户使用。我们不会主动收集 13 岁以下儿童的个人信息。如您是家长或监护人，并认为孩子在使用过程中提供了不必要的个人信息，请联系我们，我们会协助处理。
-
-### 政策更新
-
-我们可能会不时更新本隐私政策。更新后将通过应用内展示、版本说明等方式告知您。您继续使用本应用即表示接受更新后的政策。
+### 1.6 订阅状态
+- **管理方式**：通过 Apple StoreKit 管理，我们无法访问您的支付信息
 
 ---
 
-## 二、用户协议
+## 二、我们不收集的信息
 
-最后更新：2026年2月22日
+我们**不会**收集以下信息：
+- 姓名、电话号码、邮箱地址
+- 地理位置
+- 通讯录
+- IDFA 广告标识符
+- 任何可识别个人身份的信息
 
-### 服务说明
-
-slymask棒球是一款专业棒球训练辅助工具，提供动作分析、比赛记录、投球九宫格、AR测距、战术板、装备检查、经验库等功能。本应用由刘肖龙（个人开发者）独立开发与维护。下载、安装或使用本应用即表示您同意本用户协议。
-
-### 会员与试用
-
-本应用部分功能为会员功能。未订阅用户可获得全功能共享的免费试用次数（以应用内显示为准）。订阅会员后可解锁全部高级功能的无限使用。
-
-### 使用规范
-
-- 请合法、合理使用本应用，不得用于任何违法违规用途。
-- 您对通过本应用记录、导出和分享的内容负全部责任。
-- 禁止对本应用进行反编译、逆向工程或其他破解行为。
-
-### 免责声明
-
-- 测距、动作分析等结果仅供参考，不构成专业训练建议。
-- 本应用按「现状」提供，我们对因使用本应用而产生的任何直接或间接损失不承担责任。
-- 建议在专业教练指导下进行棒球训练，避免运动伤害。
-
-### 知识产权
-
-本应用内的 logo、界面设计、软件代码、图标等知识产权归开发者刘肖龙个人所有。未经书面授权，不得复制、修改、分发或用于商业用途。
-
-### 协议变更
-
-保留随时修改本用户协议的权利。重大变更将通过应用内通知告知。继续使用本应用即表示您接受修订后的协议。
+我们**不要求**您注册账号。
 
 ---
 
-## 三、订阅条款（自动续费服务说明）
+## 三、第三方技术
 
-最后更新：2026年2月22日
+### 3.1 Apple 技术（本地处理）
+- **ARKit**：AR 测距，所有计算在设备本地完成
+- **Vision Framework**：人体关键点识别，所有视频分析在设备本地完成
+- **HealthKit**：健康数据读写，数据存储在 Apple Health App 中
+- **StoreKit**：应用内购买，我们无法访问您的支付信息
 
-### 订阅内容
-
-订阅或购买 slymask棒球会员可解锁全部高级功能，包括但不限于：
-
-- 无限次动作分析
-- 无限场比赛记录
-- 投球九宫格与投手统计/评分
-- 战术板、装备检查、经验库等工具能力的完整使用
-- 持续更新的新功能
-
-### 会员方案与价格
-
-| 类型 | 说明 |
-|------|------|
-| 月度订阅 | 按月自动续费 |
-| 年度订阅 | 按年自动续费 |
-| 永久会员 | 一次性购买，永久解锁全部功能 |
-
-具体价格以 App Store 显示为准，可能因地区和汇率有所不同。
-
-**免费试用**：未订阅用户可获得全功能共享 20 次试用机会（用完后需订阅才能继续使用受限功能）。
-
-### 付款与续费
-
-- 确认购买后，费用将从您的 Apple ID 账户扣除。
-- 月度订阅和年度订阅将在当前周期结束前 24 小时内自动续费并扣费。
-- 永久会员为一次性购买，不涉及自动续费。
-- 如您在到期前取消订阅，则不会产生下一周期费用。
-
-### 取消订阅
-
-您可以随时在「设置 > Apple ID > 订阅」中取消月度或年度订阅。
-
-- 取消后，您仍可使用已付费周期内的高级功能。
-- 取消不会退还当前订阅周期的费用。
-- 永久会员无需取消，购买后永久有效。
-
-### 恢复购买
-
-如果您更换设备或重新安装应用，可以在订阅页面点击「恢复购买」来恢复您的订阅或永久会员状态。
-
-### 相关链接
-
-- [Apple 标准最终用户许可协议（EULA）](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
+### 3.2 Google MediaPipe（本地处理）
+- **用途**：辅助人体姿态检测
+- **处理方式**：所有计算在设备本地完成，不会向 Google 发送任何数据
 
 ---
 
-## 联系我们
+## 四、数据共享
 
-如有任何疑问、建议或投诉，欢迎随时联系我们。
+我们**不会**向任何第三方出售、出租或共享您的个人信息，除非：
+- 法律要求（如法院传票）
+- 保护我们的合法权益
 
-- 邮箱：shawlion@qq.com
+---
+
+## 五、数据安全
+
+- 所有数据仅存储在您的设备本地
+- iPhone 和 Watch 之间的数据同步通过 Apple 加密通道传输
+- 健康数据由 iOS 系统加密保护
+
+---
+
+## 六、您的权利
+
+您可以随时：
+- 在 iOS 设置中撤销相机、相册、健康权限
+- 删除 App 以清除所有本地数据
+- 在 Apple Health App 中删除健康数据
+
+---
+
+## 七、儿童隐私
+
+本 App 不针对 13 岁以下儿童。我们不会故意收集儿童的个人信息。
+
+---
+
+## 八、隐私政策更新
+
+我们可能会不定期更新本隐私政策。重大变更会在 App 内通知您。
+
+---
+
+## 九、联系我们
+
+如有隐私相关问题，请联系：**shawlion@qq.com**
+
+---
+
+---
+
+# SlyMask Baseball - Privacy Policy
+
+**Effective Date: February 27, 2026**  
+**Last Updated: February 27, 2026**
+
+---
+
+## 1. Information We Collect
+
+### 1.1 Camera Permission (iPhone Only)
+- **Purpose**: AR distance measurement, recording pitching/batting videos
+- **Processing**: All video and image data is processed locally on your device and never uploaded to any server
+- **Technology**: Uses Apple ARKit and Vision Framework for local analysis
+
+### 1.2 Photo Library Permission (iPhone Only)
+- **Purpose**: Select existing videos for motion analysis
+- **Processing**: Only reads videos you select, all analysis is done locally
+
+### 1.3 Health Data (Apple Watch Only)
+- **Read Access**: Heart rate, active energy burned
+- **Write Access**: Workout records (duration, calories, heart rate data)
+- **Purpose**:
+  - Real-time heart rate monitoring during training
+  - Record calories burned during training
+  - Generate training history
+- **Processing**:
+  - All health data is stored in Apple Health App, managed by iOS
+  - We never upload health data to any server
+  - Data sync between iPhone and Watch uses Apple WatchConnectivity framework with encryption
+
+### 1.4 Motion Sensors (Apple Watch Only)
+- **Purpose**: Detect swing and pitching motions
+- **Processing**: Sensor data is processed locally on Watch for motion recognition
+
+### 1.5 Local Storage Data
+- **Stored Content**:
+  - Match records
+  - Pitch charts
+  - Equipment lists
+  - Training plans
+  - Free trial usage count
+- **Storage Method**: Uses iOS UserDefaults and local file system, all data stored only on your device
+
+### 1.6 Subscription Status
+- **Management**: Managed by Apple StoreKit, we cannot access your payment information
+
+---
+
+## 2. Information We Do NOT Collect
+
+We **do NOT** collect:
+- Name, phone number, email address
+- Location data
+- Contacts
+- IDFA advertising identifier
+- Any personally identifiable information
+
+We **do NOT** require account registration.
+
+---
+
+## 3. Third-Party Technologies
+
+### 3.1 Apple Technologies (Local Processing)
+- **ARKit**: AR distance measurement, all computation done locally
+- **Vision Framework**: Body keypoint detection, all video analysis done locally
+- **HealthKit**: Health data read/write, data stored in Apple Health App
+- **StoreKit**: In-app purchases, we cannot access your payment info
+
+### 3.2 Google MediaPipe (Local Processing)
+- **Purpose**: Assist with body pose detection
+- **Processing**: All computation done locally on device, no data sent to Google
+
+---
+
+## 4. Data Sharing
+
+We **do NOT** sell, rent, or share your personal information with any third parties, except:
+- When required by law (e.g., court order)
+- To protect our legal rights
+
+---
+
+## 5. Data Security
+
+- All data stored locally on your device only
+- Data sync between iPhone and Watch uses Apple encrypted channels
+- Health data is encrypted and protected by iOS
+
+---
+
+## 6. Your Rights
+
+You can always:
+- Revoke camera, photo library, and health permissions in iOS Settings
+- Delete the App to remove all local data
+- Delete health data in Apple Health App
+
+---
+
+## 7. Children's Privacy
+
+This App is not directed to children under 13. We do not knowingly collect personal information from children.
+
+---
+
+## 8. Privacy Policy Updates
+
+We may update this privacy policy from time to time. Significant changes will be notified within the App.
+
+---
+
+## 9. Contact Us
+
+For privacy-related questions, contact: **shawlion@qq.com**
+把这个内容保存为 README.md 或 index.md，推送到你的 shawlion-privacy.github.io/slymask-privacy 仓库就行了。
