@@ -1,643 +1,300 @@
-# SlyMask 棒球 / SlyMask Baseball 隐私政策  
-# Privacy Policy
+# SlyMask 棒球 / SlyMask Baseball 隐私政策
 
-生效日期 / Effective Date: 2026年4月1日 / April 1, 2026  
-最后更新 / Last Updated: 2026年4月1日 / April 1, 2026
+生效日期 / Effective Date: 2026 年 7 月 13 日 / July 13, 2026  
+最后更新 / Last Updated: 2026 年 7 月 13 日 / July 13, 2026
 
 ---
 
 # 中文版
 
-## 概述
+## 1. 概述
 
-SlyMask 棒球（以下简称“本应用”）由刘肖龙（个人开发者）开发与维护。本隐私政策适用于本应用的 iPhone 版本，以及与其配套的 Apple Watch 版本。
+SlyMask 棒球（以下简称“本应用”）。
 
-我们重视你的隐私与数据安全。SlyMask 棒球的大多数核心功能采用**设备本地处理**方式完成。除 Apple 提供的系统服务外，我们**不会建立用于存储你的训练视频、分析结果、健康数据或比赛记录的开发者自有服务器**。
+本应用的大部分功能采用设备本地处理。除 Apple 提供的系统服务外，我们不运营用于接收或保存你的训练视频、照片、动作分析结果、比赛记录、训练计划或分享奖励状态的开发者服务器。
 
-本政策用于说明：当你使用本应用时，我们会处理哪些信息、如何处理这些信息，以及你可以如何管理自己的数据与权限。
+本应用不要求注册账号，不含第三方广告 SDK、第三方分析 SDK或第三方追踪 SDK，不进行跨应用或跨网站追踪，也不会出售用户数据。
 
----
+自 3.07 版本起，本应用不再提供 Apple Watch、HealthKit 或 Game Center 功能。旧版本产生并保存在 iPhone 本地的历史训练记录仍可在兼容范围内读取，但本应用不会继续读取或写入 Apple Health 数据，也不会从 Apple Watch 收集新数据。
 
-## 一、我们会处理哪些信息
+## 2. 我们处理的信息
 
-### 1. iPhone 相机权限
+### 2.1 相机
 
-当你使用 AR 测距、训练视频录制等功能时，本应用会请求相机权限。
+当你使用 AR 测距或录制训练视频时，本应用可能请求相机权限。相机画面仅用于设备本地的测量、显示、录制或分析，不会上传至开发者服务器或广告、分析、追踪服务器。
 
-- 用途：用于 AR 测距、录制训练相关画面
-- 处理方式：相机画面仅在你的设备本地用于实时测量、显示或后续分析
-- 我们不会将相机画面上传至开发者自建服务器或第三方广告/追踪服务器
+### 2.2 相册与文件
 
-### 2. iPhone 相册 / 文件访问权限
+当你选择视频、照片或文件进行动作分析、导入或导出时，本应用会通过 Apple 提供的系统选择器访问你主动选择的内容。所选媒体在设备本地处理，不会上传至开发者服务器。
 
-当你选择本地视频、照片或文件进行动作分析时，本应用会请求相册或文件访问权限。
+### 2.3 你创建或导入的内容
 
-- 用途：用于导入本地媒体内容进行动作分析
-- 处理方式：所选媒体在设备本地处理
-- 我们不会将你选择的视频或照片上传至开发者自建服务器
+本应用会在设备本地处理你主动创建、记录或导入的内容，包括：
 
-### 3. 你在应用内创建或导入的内容
+- 投球与挥棒视频、照片及分析关键帧；
+- 动作关键点、动作阶段、角度、速度估算、可信度、分析结论和建议；
+- 7 天训练计划、每日完成状态、复测结果和前后对比报告；
+- 比赛、投球九宫格、击球训练、球员测评和战术板内容；
+- 装备清单、备注、语言、提醒时间和其他偏好设置；
+- 由旧版本 Apple Watch 功能产生、目前仍保存在 iPhone 本地的兼容历史记录。
 
-为了提供功能，本应用会在你的设备上处理你主动创建、记录或导入的内容，例如：
+这些内容只用于提供应用内训练、分析、记录、统计、回顾、导出和分享功能。
 
-- 比赛记录
-- 投球九宫格记录与统计
-- 击球训练记录与趋势
-- Apple Watch 训练记录
-- 球员测评
-- 动作分析结果
-- 分析结论、标签、可信度、建议、训练建议
-- 分析关键帧图片
-- 装备清单
-- 备注、偏好设置、语言设置及其他应用内配置
+### 2.4 本地额度、奖励和使用状态
 
-这些内容主要用于实现本应用的训练、记录、回顾、统计、成就与展示功能。
+为了提供免费额度、会员权益、7 天训练以及可控的升级提示，本应用会在设备本地保存必要状态，例如：
 
-### 4. Apple Watch 健康数据（需你授权）
+- 免费 AI 分析使用次数；
+- 7 天复测资格；
+- 分享报告获得的额外 AI 分析次数；
+- 已领取奖励的报告标识和每周领取次数；
+- 会员权益状态、购买恢复结果；
+- 本地的功能使用、付费墙展示和提示频率状态。
 
-当你在 Apple Watch 上使用训练相关功能并授权 HealthKit 后，本应用可能读取和写入以下健康/运动数据：
+这些状态不会上传至开发者服务器。本版本没有接入线上转化统计。
 
-- 读取：如心率、活动能量消耗等 Apple Health 可授权的数据
-- 写入：如训练记录、训练时长及相关运动数据
+### 2.5 订阅与购买
 
-相关数据由 Apple Health / HealthKit 管理。我们不会将这些健康数据上传至开发者自建服务器。
+月度订阅、年度订阅、永久会员、购买和恢复购买均由 Apple StoreKit 处理。本应用只读取 Apple 返回的产品、交易和权益状态，用于解锁对应功能。
 
-### 5. Apple Watch 运动传感器数据
+我们无法访问你的 Apple ID 密码、银行卡号、支付密码或完整支付凭证。Apple 对相关数据的处理受 Apple 自身条款与隐私政策约束。
 
-当你在 Apple Watch 上使用训练功能时，本应用可能处理设备运动传感器数据，例如：
+### 2.6 本地通知
 
-- 加速度
-- 陀螺仪 / 旋转数据
-- 设备运动状态
+如果你主动开启 7 天训练提醒，本应用会请求通知权限，并在设备本地安排提醒。提醒内容和时间不会发送至开发者服务器。你可随时在应用内或 iOS“设置”中关闭通知。
 
-用途主要包括：
+### 2.7 你主动联系我们时提供的信息
 
-- 挥棒识别
-- 投球记录
-- 训练统计与反馈
+如果你通过电子邮件联系我们，我们会收到你主动提供的邮件地址、邮件内容及附件，仅用于回复、支持和处理相关问题。除法律要求或解决支持事项所必需外，我们不会将这些信息用于营销或出售给第三方。
 
-这些数据主要在设备本地处理，不用于广告跟踪。
+## 3. AI 与动作分析
 
-### 6. 订阅与购买相关信息
+投球和挥棒分析使用 Apple 系统框架、随应用提供的姿态模型以及本地运行库在你的设备上完成。原始视频、姿态关键点和分析报告不会发送至开发者服务器。
 
-当你购买、恢复购买或使用 SlyMask Pro 时，购买流程由 Apple 的 StoreKit 处理。
+分析结果是训练辅助信息，可能因拍摄角度、光线、遮挡、帧率、背景人物和设备性能而产生误差，不构成医疗建议、伤病诊断或专业教练意见。
 
-本应用可能读取与你的购买结果和权益状态相关的必要信息，例如：
+## 4. 数据保存与删除
 
-- 当前是否已订阅
-- 当前是否已购买永久会员
-- 当前可解锁的会员功能状态
-- 与免费体验额度相关的本地状态
+### 4.1 本地保存
 
-我们**无法访问**你的 Apple ID 密码、银行卡号、支付密码或其他完整支付信息。
+分析历史、关键帧、比赛记录、训练记录、训练计划、报告、球员测评、额度和偏好设置主要保存在设备的 UserDefaults、应用沙盒文件或本地数据库中。
 
-### 7. 排行榜与 Game Center 相关信息
+### 4.2 删除
 
-如果你登录或启用 Apple Game Center，本应用可能会使用 Apple 提供的能力处理：
+你可以使用应用内的数据管理或单条删除功能清理相应内容。卸载本应用通常会删除应用沙盒中的本地数据。订阅和永久购买记录由 Apple 管理，不会因卸载或清除本地数据而取消；重新安装后可能通过 Apple 恢复。
 
-- 排行榜成绩提交
-- 排行榜展示
-- Game Center 登录状态
-- 本地玩家认证状态
+出于防止免费额度或分享奖励被异常重复领取的目的，某些本地计数可能与普通内容的删除操作分开管理。它们仍只保存在本地设备上。
 
-这些能力由 Apple 提供并管理，不属于开发者自建账号体系。
+### 4.3 缓存与临时文件
 
-### 8. 设备间同步信息
+视频分析、关键帧、导出和分享过程中可能产生缓存或临时文件。系统或应用会按功能需要清理这些文件，你也可以通过应用内数据管理或卸载应用进行清理。
 
-为了让 iPhone 与 Apple Watch 之间的训练体验保持一致，本应用可能通过 Apple 提供的系统机制在你的设备之间同步必要信息，例如：
+## 5. 导出与分享
 
-- 训练事件与训练摘要
-- Apple Watch 训练剩余额度
-- 会员 / 订阅状态
-- 投手或训练配置
-- 与 Watch 功能相关的必要设置
+当你导出报告卡、图片、视频、表格或其他内容时，文件可能先保存在设备本地或临时目录。
 
-如果你的设备登录了同一 Apple 账号并可使用 iCloud，部分**轻量状态数据**（例如成就解锁状态等）可能通过 Apple 提供的 iCloud Key-Value Store 在你的设备之间同步。
+分享由你主动发起，并通过 iOS 系统分享面板完成。你自行选择是否分享、分享给谁以及使用哪个第三方应用。内容离开本应用后，由接收方或第三方平台的隐私政策约束。
 
-### 9. 我们通常不主动收集的信息
+非订阅用户主动完成一份 7 天报告的分享后，本应用可在本地增加 1 次 AI 分析奖励。同一报告只能领取 1 次，每周最多 3 次；取消系统分享不会获得奖励。该奖励不要求评分、评论、购买、关注账号或分享到指定平台，也不会产生线上转化追踪。
 
-除非你主动通过电子邮件联系我们，否则我们通常**不会直接收集**以下信息：
+## 6. Apple 系统服务与本地运行组件
 
-- 姓名
-- 电话号码
-- 通讯录
-- 精确地理位置
-- 身份证件信息
-- IDFA 广告标识符
-- 跨应用、跨网站广告跟踪所需信息
+本应用主要使用：
 
-本应用**不要求你注册账号**才可使用主要功能。
+- Vision：人体姿态与关键点识别；
+- ARKit：AR 测距；
+- Photos / PhotosUI 和系统文件选择器：由你选择媒体或文件；
+- UserNotifications：设备本地训练提醒；
+- StoreKit：应用内购买、订阅和恢复购买；
+- iOS 系统分享面板：由你主动导出或分享；
+- 随应用提供的姿态模型与 ONNX Runtime：仅在设备本地执行 AI 推理。
 
----
+这些功能不用于广告追踪。某些 Apple 服务会按 Apple 的平台机制处理必要信息。
 
-## 二、我们如何使用这些信息
+本应用自 3.07 起不再请求或使用 HealthKit、WatchConnectivity、Game Center、App Group 或 iCloud Key-Value Store 权限。
 
-我们处理上述信息，主要用于以下目的：
+## 7. 数据共享与披露
 
-- 提供和实现核心功能，例如动作分析、训练记录、比赛记录、投球九宫格、AR 测距、历史回顾、趋势统计等
-- 在你的设备上保存分析历史、关键帧图片、训练记录、比赛记录和球员测评，便于你回顾和继续训练
-- 在 iPhone 与 Apple Watch 之间同步必要状态，保持训练和会员体验一致
-- 判断订阅权益、恢复购买状态，并管理功能可用性
-- 展示成就、历史进度、训练反馈和排行榜
-- 提升应用稳定性与使用体验
+我们不会出售、出租或交易你的个人信息，也不会为广告目的向数据经纪商或广告平台披露你的应用内内容。
 
-本应用**不会**将你的数据用于：
+仅在以下情形可能处理或披露必要信息：
 
-- 跨应用或跨网站追踪
-- 个性化广告投放
-- 用户画像
-- 向第三方出售用户数据
+1. 你主动通过系统分享面板或电子邮件发送内容；
+2. Apple 为处理购买、订阅、系统权限和平台服务而进行必要处理；
+3. 适用法律、法院或监管机构依法要求；
+4. 为保护用户、开发者或公众的合法权益与安全所必需。
 
----
+## 8. 你的选择与权利
 
-## 三、数据存储与处理方式
+你可以：
 
-### 1. 本地存储为主
+- 在 iOS“设置”中管理相机、照片和通知权限；
+- 在应用内删除记录、计划、报告和分析历史；
+- 使用数据管理功能清理本地内容；
+- 选择不分享任何内容；
+- 在 Apple 账户中管理或取消订阅；
+- 通过本文末尾的邮箱咨询隐私事项。
 
-本应用的大部分数据默认保存在你的设备本地，包括但不限于：
+撤回权限后，与该权限相关的功能可能无法继续使用。
 
-- 分析记录与关键帧图片
-- 比赛记录
-- 投球九宫格记录
-- 击球训练记录
-- Apple Watch 训练历史
-- 球员测评
-- 装备清单
-- 偏好设置
-- 部分缓存文件和临时文件
+## 9. 儿童隐私
 
-### 2. 本地分析为主
+本应用面向棒球和垒球训练、记录与学习场景，不通过开发者服务器主动收集儿童个人信息。未成年人应在监护人指导下使用购买、分享和对外联系功能。如果你是监护人并认为未成年人向我们发送了不必要的信息，请联系我们处理。
 
-你导入的视频、照片以及由此生成的大部分分析结果，主要在设备本地完成处理。
+## 10. 政策更新
 
-我们不会将这些原始媒体内容上传到开发者自建服务器。
+我们可能根据功能、法律法规或 Apple 平台要求更新本政策。更新后的生效日期会显示在本页，并可能通过应用内页面、版本更新说明或其他合理方式提示。
 
-### 3. Apple Health 数据存储
-
-如果你授权本应用访问 HealthKit：
-
-- 相关健康数据由 Apple Health App 存储和管理
-- 这些数据受 Apple 系统权限和安全机制保护
-- 你可以在 Apple Health App 中查看、管理或删除这些数据
-
-### 4. 订阅与支付信息
-
-订阅、续费、恢复购买等流程由 Apple 处理。
-
-- 我们只会通过 Apple 提供的系统接口判断你的会员权益状态
-- 我们无法访问你的完整支付凭证、Apple ID 密码或银行卡信息
-
-### 5. iCloud 轻量同步
-
-在你的设备满足 Apple 系统条件时，部分轻量状态数据（如成就解锁状态）可能通过 iCloud Key-Value Store 在同一 Apple 账号下的设备之间同步。
-
-该同步能力由 Apple 提供和管理，并非开发者自建云服务。
-
-### 6. App Group 共享容器
-
-为了支持 Apple Watch、复杂功能状态同步或相关展示能力，部分轻量训练摘要和状态信息可能存放于 Apple 提供的 App Group 共享容器中，仅用于你自己设备上的功能展示与协作。
-
-### 7. 导出与分享
-
-当你使用本应用的导出或系统分享功能时：
-
-- 导出的图片、视频或卡片可能先保存在设备本地或临时目录
-- 是否分享、分享给谁、分享到哪些平台，均由你自行决定
-- 一旦你将内容分享到其他 App 或平台，相关内容将受对应平台自身的隐私政策约束
-
----
-
-## 四、我们使用的系统技术与第三方服务
-
-本应用当前主要使用 Apple 提供的系统框架和服务，例如：
-
-- **Vision**：用于人体姿态 / 关键点识别与动作分析
-- **ARKit**：用于 AR 测距相关能力
-- **HealthKit**：用于读取和写入你授权的健康 / 训练数据
-- **StoreKit**：用于应用内购买、订阅、恢复购买
-- **WatchConnectivity**：用于 iPhone 与 Apple Watch 之间同步必要数据
-- **iCloud Key-Value Store**：用于部分轻量状态在你的设备之间同步
-- **Game Center**：用于排行榜和成绩展示
-
-截至当前版本，我们**未集成第三方广告 SDK、第三方用户画像 SDK 或第三方追踪 SDK** 用于广告跟踪或出售用户数据。
-
----
-
-## 五、信息共享与披露
-
-我们不会向第三方**出售、出租或交易**你的个人信息。
-
-仅在以下有限情形下，相关信息可能被披露或按系统机制处理：
-
-### 1. 你主动发起分享
-当你主动使用系统分享功能导出图片、视频、卡片或其他内容时，分享对象和范围由你自行决定。
-
-### 2. 法律法规要求
-如适用法律、法院或监管机构依法要求披露，或为履行法定义务所必需时，我们可能依法配合。
-
-### 3. 保护合法权益与安全
-在为保护你、其他用户、开发者或公众的人身安全、财产安全及合法权益所必要时，可能依法进行必要处理。
-
-### 4. Apple 系统服务的正常处理
-当你使用 Apple Health、StoreKit、iCloud、WatchConnectivity、Game Center 等 Apple 系统服务时，相关数据会按 Apple 的平台机制和隐私规则处理。
-
----
-
-## 六、你的权利与选择
-
-### 1. 权限管理
-
-你可以随时在系统中管理或撤回相关权限，例如：
-
-- 在 iPhone“设置”中管理相机、照片权限
-- 在 iPhone“健康”App 或相关系统设置中管理 HealthKit 授权
-- 在 Apple Watch 或相关系统设置中管理运动与健康相关权限
-
-撤回授权后，相关功能可能无法继续使用或会受到限制。
-
-### 2. 删除应用内数据
-
-你可以通过以下方式删除数据：
-
-- 在应用内删除比赛记录、训练记录、分析历史、投球九宫格记录等
-- 使用应用中的数据管理功能清除本地内容
-- 卸载本应用以移除保存在本地设备中的大部分应用内容
-- 在 Apple Health App 中删除你授权写入的健康 / 训练数据
-
-### 3. 关于“清空本地数据”
-
-本应用可能提供清理本地内容的功能。请注意：
-
-- 该功能主要用于删除本地用户内容和偏好设置
-- 健康数据仍需在 Apple Health App 中管理和删除
-- 订阅状态不会因为本地数据清理而失效，后续仍可能由 Apple 重新同步恢复
-- 某些应用状态（例如部分免费额度计数、成就进度、连续使用天数等）可能不会与普通内容数据完全同步删除
-
-### 4. 管理 iCloud 同步
-
-如果你不希望 Apple 的 iCloud 机制在你的设备之间同步部分轻量状态，可以通过你的 Apple 账号 / iCloud 设置管理相关同步能力。
-
-### 5. 管理订阅
-
-你可以在 Apple 账户的订阅管理中随时取消或管理订阅。
-
-### 6. 联系我们
-
-如果你对本隐私政策或数据处理方式有疑问、建议或投诉，可以通过本文末尾的联系方式联系我们。
-
----
-
-## 七、儿童隐私
-
-本应用面向棒球 / 垒球训练、记录与学习场景，可由不同年龄段用户使用。
-
-我们不会主动向 13 岁以下儿童收集不必要的个人信息。
-
-如果你是监护人，并认为未成年人在使用过程中向我们提供了不必要的个人信息，请及时联系我们，我们会在核实后协助处理。
-
----
-
-## 八、隐私政策更新
-
-我们可能根据产品功能调整、法律法规变化或 Apple 平台要求，不时更新本隐私政策。
-
-更新后的版本可能通过以下一种或多种方式向你展示：
-
-- 本页面更新
-- 应用内展示
-- 版本更新说明
-- 其他必要且合理的方式
-
-更新生效后，你继续使用本应用，即表示你已阅读并同意更新后的隐私政策。
-
----
-
-## 九、联系我们
-
-如你对隐私相关事项有任何问题，请联系：
-
-- 开发者：刘肖龙
+## 11. 联系我
 - 邮箱：shawlion@qq.com
 
----
-
-如本隐私政策的不同语言版本之间存在差异，以中文版本为准。
+如不同语言版本存在差异，以中文版本为准。
 
 ---
 
 # English Version
 
-## Overview
+## 1. Overview
 
-SlyMask Baseball (the “App”) is developed and maintained by **Xiaolong Liu**, an independent developer. This Privacy Policy applies to the iPhone version of the App and its companion Apple Watch version.
+SlyMask Baseball (the “App”) is developed and maintained by Xiaolong Liu, an independent developer.
 
-We value your privacy and data security. Most core features of SlyMask Baseball are completed through **on-device local processing**. Except for Apple-provided system services, we **do not operate developer-owned servers to store your training videos, analysis results, health data, or game records**.
+Most App features use on-device processing. Except for Apple-provided system services, we do not operate developer servers that receive or store your training videos, photos, motion-analysis results, game records, training plans, or share-reward state.
 
-This Policy explains what information we process when you use the App, how we process it, and what rights and choices you have.
+The App does not require account registration. It contains no third-party advertising, analytics, or tracking SDK and does not perform cross-app or cross-site tracking or sell user data.
 
----
+Starting with version 3.07, the App no longer provides Apple Watch, HealthKit, or Game Center features. Legacy training records created by an older Watch version may remain readable locally on iPhone for compatibility, but the App no longer reads or writes Apple Health data or collects new Apple Watch data.
 
-## 1. Information We Process
+## 2. Information We Process
 
-### 1.1 iPhone Camera Permission
+### 2.1 Camera
 
-When you use AR distance measurement, training video recording, and related features, the App may request camera access.
+The App may request camera access when you use AR distance measurement or record a training video. Camera content is used only for on-device measurement, display, recording, or analysis and is not uploaded to developer, advertising, analytics, or tracking servers.
 
-- Purpose: AR distance measurement and training video capture
-- Processing: Camera content is used locally on your device for real-time measurement, display, or later analysis
-- We do not upload camera footage to developer-owned servers or third-party ad/tracking servers
+### 2.2 Photos and Files
 
-### 1.2 iPhone Photo Library / File Access
+When you select a video, photo, or file for analysis, import, or export, the App uses Apple system pickers to access only the content you choose. Selected media is processed on device and is not uploaded to developer servers.
 
-When you select local videos, photos, or files for motion analysis, the App may request access to your photo library or files.
+### 2.3 Content You Create or Import
 
-- Purpose: Import local media for motion analysis
-- Processing: Selected media is processed locally on your device
-- We do not upload selected media to developer-owned servers
+The App processes content you actively create, record, or import on your device, including:
 
-### 1.3 Content You Create or Import in the App
+- Pitching and batting videos, photos, and analysis key frames;
+- Pose keypoints, motion phases, angles, speed estimates, confidence, conclusions, and recommendations;
+- Seven-day training plans, daily completion state, reassessment results, and before/after reports;
+- Games, pitch charts, hitting training, player assessments, and tactics-board content;
+- Equipment lists, notes, language, reminder time, and other preferences;
+- Compatible history created by an older Apple Watch version and still stored locally on iPhone.
 
-To provide the App’s features, we process content that you actively create, record, or import, including for example:
+This content is used only to provide training, analysis, recording, statistics, review, export, and sharing features.
 
-- Game records
-- Pitch chart records and related statistics
-- Hitting training records and trends
-- Apple Watch training records
-- Player assessments
-- Motion analysis results
-- Analysis conclusions, tags, confidence levels, recommendations, and training suggestions
-- Analysis key frame images
-- Equipment checklists
-- Notes, preference settings, language settings, and other in-app configuration
+### 2.4 Local Quota, Reward, and Usage State
 
-This content is used to provide training, recording, review, statistics, achievements, and display features within the App.
+To provide free quotas, member entitlements, seven-day training, and controlled upgrade prompts, the App stores necessary state locally, including:
 
-### 1.4 Apple Watch Health Data (With Your Authorization)
+- Free AI-analysis usage;
+- Eligibility for the Day 7 reassessment;
+- Bonus AI-analysis credits earned from report sharing;
+- Report identifiers already rewarded and the weekly reward count;
+- Membership entitlement and purchase-restore state;
+- Local feature-usage, paywall-display, and prompt-frequency state.
 
-If you authorize HealthKit when using training-related features on Apple Watch, the App may read and write health / fitness data such as:
+This state is not uploaded to a developer server. Version 3.07 adds no online conversion tracking.
 
-- Read: heart rate, active energy burned, and other Apple Health-authorized data
-- Write: workout records, workout duration, and related fitness data
+### 2.5 Subscriptions and Purchases
 
-This data is managed by Apple Health / HealthKit. We do not upload health data to developer-owned servers.
+Monthly and yearly subscriptions, lifetime access, purchases, and restore are handled by Apple StoreKit. The App reads only product, transaction, and entitlement information returned by Apple to unlock the corresponding features.
 
-### 1.5 Apple Watch Motion Sensor Data
+We cannot access your Apple ID password, card number, payment password, or complete payment credentials. Apple's processing is governed by Apple's terms and privacy policy.
 
-When you use Apple Watch training features, the App may process motion sensor data such as:
+### 2.6 Local Notifications
 
-- Acceleration
-- Rotation / gyroscope data
-- Device motion state
+If you enable seven-day training reminders, the App requests notification permission and schedules reminders locally on your device. Reminder content and times are not sent to a developer server. You can disable reminders in the App or iOS Settings.
 
-This data is primarily used for:
+### 2.7 Information You Send When Contacting Us
 
-- Swing detection
-- Pitch recording
-- Training statistics and feedback
+If you contact us by email, we receive the email address, message, and attachments you voluntarily provide. We use them only to reply, provide support, and resolve the issue. We do not use this information for marketing or sell it to third parties, except where required by law or necessary to provide support.
 
-It is mainly processed locally on the device and is not used for advertising tracking.
+## 3. AI and Motion Analysis
 
-### 1.6 Subscription and Purchase Information
+Pitching and batting analysis runs on your device using Apple system frameworks, a pose model bundled with the App, and local runtime components. Raw videos, pose keypoints, and analysis reports are not sent to a developer server.
 
-When you purchase, restore, or use SlyMask Pro, purchases are handled by Apple’s StoreKit.
+Analysis is training-support information and may be affected by camera angle, lighting, occlusion, frame rate, background people, and device performance. It is not medical advice, an injury diagnosis, or a substitute for a professional coach.
 
-The App may read necessary information related to purchase results and entitlement status, such as:
+## 4. Storage and Deletion
 
-- Whether you currently have an active subscription
-- Whether you have purchased lifetime access
-- Which premium features are unlocked
-- Certain local state related to free-use quotas
+### 4.1 Local Storage
 
-We **cannot access** your Apple ID password, payment password, bank card number, or full payment credentials.
+Analysis history, key frames, games, training records, training plans, reports, player assessments, quotas, and preferences are primarily stored in UserDefaults, sandbox files, or a local database on your device.
 
-### 1.7 Game Center Information
+### 4.2 Deletion
 
-If you sign in to or use Apple Game Center, the App may use Apple-provided capabilities related to:
+You can remove relevant content through in-app data management and individual delete controls. Uninstalling the App normally removes data in its local sandbox. Subscriptions and lifetime-purchase records are managed by Apple and are not cancelled by uninstalling or clearing local data; Apple may restore them after reinstalling.
 
-- Leaderboard score submission
-- Leaderboard display
-- Game Center sign-in state
-- Local player authentication state
+To prevent abnormal repeated redemption of free quotas or share rewards, some local counters may be managed separately from ordinary content deletion. They still remain only on the local device.
 
-These functions are provided and managed by Apple and do not create a separate developer-owned account system.
+### 4.3 Cache and Temporary Files
 
-### 1.8 Cross-Device Sync Information
+Video analysis, key-frame extraction, export, and sharing may create cache or temporary files. The system or App removes these files as needed, and you can also use data management or uninstall the App to clear local files.
 
-To keep the training experience consistent between iPhone and Apple Watch, the App may synchronize necessary information between your devices through Apple system mechanisms, such as:
+## 5. Export and Sharing
 
-- Training events and summaries
-- Apple Watch remaining training quota
-- Membership / subscription state
-- Pitcher or training configurations
-- Necessary Watch-related settings
+When you export report cards, images, videos, spreadsheets, or other content, the file may first be stored locally or in a temporary directory.
 
-If your devices are signed into the same Apple account and iCloud is available, some **lightweight state data** (such as achievement unlock state) may also sync through Apple’s iCloud Key-Value Store.
+Sharing is initiated by you through the standard iOS share sheet. You decide whether to share, with whom, and through which third-party app. After content leaves the App, it is governed by the recipient's or third-party platform's privacy policy.
 
-### 1.9 Information We Generally Do Not Actively Collect
+After a non-subscriber voluntarily completes sharing a finished seven-day report, the App may add one local bonus AI-analysis credit. Each report can earn the reward once, with a maximum of three rewards per week; cancelling the share sheet grants no reward. The reward does not require an App Store rating or review, purchase, account follow, or any specific social network, and no online conversion event is created.
 
-Unless you voluntarily contact us by email, we generally do **not** directly collect:
+## 6. Apple Services and Local Runtime Components
 
-- Your name
-- Phone number
-- Contacts
-- Precise location
-- Government identification information
-- IDFA advertising identifier
-- Cross-app or cross-site advertising tracking data
+The App primarily uses:
 
-The App does **not** require account registration to use its main features.
+- Vision for body-pose and keypoint recognition;
+- ARKit for AR distance measurement;
+- Photos / PhotosUI and system file pickers for media and files you select;
+- UserNotifications for local training reminders;
+- StoreKit for in-app purchases, subscriptions, and restore;
+- The iOS share sheet for exports and sharing initiated by you;
+- A bundled pose model and ONNX Runtime for local AI inference.
 
----
+These features are not used for advertising tracking. Some Apple services process necessary information under Apple's platform mechanisms.
 
-## 2. How We Use Information
+Starting with version 3.07, the App no longer requests or uses HealthKit, WatchConnectivity, Game Center, App Group, or iCloud Key-Value Store entitlements.
 
-We process the above information mainly to:
+## 7. Disclosure and Sharing of Information
 
-- Provide and implement core features such as motion analysis, training records, game records, pitch chart, AR distance measurement, history review, and trend statistics
-- Save analysis history, key frame images, training records, game records, and player assessments on your device so you can review and continue training
-- Synchronize necessary state between iPhone and Apple Watch to keep training and membership experience consistent
-- Determine subscription entitlements, restore purchase state, and manage feature availability
-- Display achievements, progress, training feedback, and leaderboards
-- Improve app stability and user experience
+We do not sell, rent, or trade personal information and do not disclose in-app content to data brokers or advertising platforms.
 
-We do **not** use your data for:
+Necessary information may be handled or disclosed only when:
 
-- Cross-app or cross-site tracking
-- Personalized advertising
-- User profiling
-- Selling user data to third parties
+1. You actively share content through the system share sheet or email;
+2. Apple processes purchases, subscriptions, system permissions, or platform services;
+3. Applicable law, a court, or a regulator lawfully requires it; or
+4. It is necessary to protect the rights and safety of users, the developer, or the public.
 
----
+## 8. Your Choices and Rights
 
-## 3. Data Storage and Processing
+You can:
 
-### 3.1 Primarily Local Storage
+- Manage camera, photo, and notification permissions in iOS Settings;
+- Delete records, plans, reports, and analysis history in the App;
+- Clear local content through data management;
+- Choose not to share any content;
+- Manage or cancel subscriptions through your Apple account; and
+- Contact us about privacy using the email below.
 
-Most App data is stored locally on your device, including but not limited to:
+Withdrawing a permission may prevent the related feature from working.
 
-- Analysis history and key frame images
-- Game records
-- Pitch chart records
-- Hitting training records
-- Apple Watch training history
-- Player assessments
-- Equipment checklists
-- Preferences
-- Certain cache files and temporary files
+## 9. Children's Privacy
 
-### 3.2 Primarily Local Analysis
+The App is intended for baseball and softball training, recording, and learning. We do not actively collect children's personal information through developer servers. Minors should use purchase, sharing, and external-contact features with guardian guidance. If you are a guardian and believe a minor sent unnecessary information to us, please contact us.
 
-Imported videos and photos, and most analysis results generated from them, are processed locally on your device.
+## 10. Policy Updates
 
-We do not upload raw media content to developer-owned servers.
+We may update this Policy due to feature, legal, regulatory, or Apple platform changes. The effective date will be shown on this page, and changes may also be communicated in the App, release notes, or another reasonable method.
 
-### 3.3 Apple Health Data Storage
-
-If you authorize HealthKit:
-
-- Relevant health data is stored and managed by Apple Health
-- That data is protected by Apple’s system permissions and security mechanisms
-- You can review, manage, or delete it in the Apple Health app
-
-### 3.4 Subscription and Payment Information
-
-Subscriptions, renewals, and purchase restoration are handled by Apple.
-
-- We only determine entitlement status through Apple-provided system interfaces
-- We cannot access your full payment credentials, Apple ID password, or bank card information
-
-### 3.5 iCloud Lightweight Sync
-
-When Apple system conditions are met, some lightweight state data (such as achievement unlock state) may sync across devices under the same Apple account through iCloud Key-Value Store.
-
-This sync capability is provided and managed by Apple, not by a developer-owned cloud service.
-
-### 3.6 App Group Shared Container
-
-To support Apple Watch integration, advanced sync, or related display functions, certain lightweight training summaries and states may be stored in Apple’s App Group shared container for use across your own devices.
-
-### 3.7 Export and Sharing
-
-When you use export or system sharing features:
-
-- Exported images, videos, or cards may be stored locally or temporarily first
-- Whether you share, where you share, and with whom you share is entirely your choice
-- Once you share content to other apps or platforms, that content becomes subject to those platforms’ own privacy policies
-
----
-
-## 4. Apple Frameworks and System Services We Use
-
-The App currently mainly uses Apple-provided frameworks and services, such as:
-
-- **Vision**: pose / keypoint recognition and motion analysis
-- **ARKit**: AR-based distance measurement
-- **HealthKit**: reading and writing health / workout data you authorize
-- **StoreKit**: in-app purchases, subscriptions, and purchase restoration
-- **WatchConnectivity**: synchronization between iPhone and Apple Watch
-- **iCloud Key-Value Store**: syncing certain lightweight state across your devices
-- **Game Center**: leaderboards and score display
-
-As of the current version, we **do not integrate third-party advertising SDKs, profiling SDKs, or tracking SDKs** for ad tracking or data selling.
-
----
-
-## 5. Information Sharing and Disclosure
-
-We do not sell, rent, or trade your personal information to third parties.
-
-Information may only be disclosed or handled under system mechanisms in limited situations such as:
-
-### 5.1 You Actively Share It
-When you voluntarily use system sharing features to export images, videos, cards, or other content, you control the recipients and scope.
-
-### 5.2 Legal Requirements
-We may comply when disclosure is required by applicable law, court order, regulator request, or other legal obligation.
-
-### 5.3 Protection of Rights and Safety
-We may process information where reasonably necessary to protect your rights, the rights of other users, the developer, or public safety.
-
-### 5.4 Normal Processing Through Apple Services
-When you use Apple Health, StoreKit, iCloud, WatchConnectivity, Game Center, or other Apple services, related data may be processed according to Apple’s own platform rules and privacy policies.
-
----
-
-## 6. Your Rights and Choices
-
-### 6.1 Permission Management
-
-You can manage or revoke permissions at any time through system settings, such as:
-
-- Camera and photo access in iPhone Settings
-- HealthKit access in Apple Health or related system settings
-- Motion / health-related permissions on Apple Watch or related settings
-
-If you revoke permission, related features may stop working or become limited.
-
-### 6.2 Deleting In-App Data
-
-You may delete data in the following ways:
-
-- Delete game records, training records, analysis history, pitch chart records, and similar content inside the App
-- Use in-app data management features to clear local content
-- Uninstall the App to remove most locally stored App content
-- Delete health / workout data you authorized through Apple Health
-
-### 6.3 About “Clear Local Data”
-
-The App may provide features to clear local content. Please note:
-
-- These features mainly remove local user content and preferences
-- Health data must still be managed in Apple Health
-- Subscription entitlements are not permanently removed by clearing local data and may later be restored by Apple sync
-- Some App state (for example certain quota counters, achievement progress, or streak state) may not always be deleted in exactly the same way as regular content data
-
-### 6.4 Managing iCloud Sync
-
-If you do not want Apple’s iCloud mechanism to synchronize certain lightweight state across your devices, you can manage related sync settings in your Apple account / iCloud settings.
-
-### 6.5 Managing Subscriptions
-
-You may manage or cancel subscriptions through your Apple account subscription settings at any time.
-
-### 6.6 Contacting Us
-
-If you have questions, suggestions, or complaints regarding this Privacy Policy or our data handling practices, you may contact us using the contact information below.
-
----
-
-## 7. Children’s Privacy
-
-The App is designed for baseball / softball training, recording, and learning scenarios and may be used by people of different age groups.
-
-We do not knowingly collect unnecessary personal information from children under 13.
-
-If you are a guardian and believe a minor has provided unnecessary personal information while using the App, please contact us and we will assist after verification.
-
----
-
-## 8. Updates to This Privacy Policy
-
-We may update this Privacy Policy from time to time based on product changes, legal requirements, or Apple platform requirements.
-
-Updated versions may be presented through one or more of the following methods:
-
-- Updates to this page
-- In-app display
-- Version update notes
-- Other necessary and reasonable methods
-
-By continuing to use the App after an update takes effect, you acknowledge and accept the updated Privacy Policy.
-
----
-
-## 9. Contact Us
-
-If you have any privacy-related questions, please contact:
+## 11. Contact
 
 - Developer: Xiaolong Liu
 - Email: shawlion@qq.com
 
----
-
-If there is any inconsistency between language versions of this Privacy Policy, the Chinese version shall prevail.
+If language versions differ, the Chinese version controls.
