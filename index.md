@@ -1,7 +1,7 @@
 # SlyMask 棒球 / SlyMask Baseball 隐私政策
 
 生效日期 / Effective Date: 2026 年 8 月 1 日 / August 1, 2026  
-最后更新 / Last Updated: 2026 年 8 月 1 日 / August 1, 2026
+最后更新 / Last Updated: 2026 年 8 月 9 日 / August 9, 2026
 
 ---
 
@@ -9,7 +9,7 @@
 
 ## 1. 概述
 
-SlyMask 棒球（以下简称“本应用”）由个人开发者开发和维护。我们重视你的隐私，本政策说明本应用在你使用比赛记录、本地 AI 动作分析、教练指导、训练计划、AR 测距及其他功能时如何处理信息。
+SlyMask 棒球（以下简称“本应用”）由个人开发者刘肖龙开发和维护。我们重视你的隐私，本政策说明本应用在你使用比赛记录、本地 AI 动作分析、教练指导、训练计划、AR 测距及其他功能时如何处理信息。
 
 - 本应用不要求注册账号。
 - 你导入或创建的视频、照片、语音录音、动作分析结果、比赛记录和教练标注均在设备本地处理和保存；我们不运营用于接收这些内容的开发者服务器，也不保存服务器副本。
@@ -63,6 +63,16 @@ SlyMask 棒球（以下简称“本应用”）由个人开发者开发和维护
 
 动作分析属于训练辅助信息，可能受到拍摄角度、距离、光线、遮挡、帧率、背景人物及设备性能影响，不构成医疗建议、伤病诊断或对专业教练意见的替代。
 
+### 4.1 面部数据
+
+开发者不会收集、接收或上传用户的面部数据；本应用的分析流程也不会将面部数据传输到开发者或任何服务器。用户主动选择的投球或挥棒视频、由视频生成的关键帧，以及用户主动选择的球员图片中可能包含可见面部。为了对齐人体骨架并跟踪被分析运动员的动作，本应用可能仅在设备本地处理有限的面部或头部区域姿态点，包括二维分析回退路径中的鼻部、左耳和右耳坐标及置信度，以及三维分析路径中的头顶和头部中心点。球员图片只作为用户选择的本地头像保存，本应用不会对头像执行面部分析。
+
+这些有限姿态点仅用于人体骨架对齐、主要运动员跟踪、棒球动作指标计算，以及教练指导中的骨架叠加。本应用不创建人脸网格、面纹、人脸特征模板或其他面部生物识别标识，也不进行人脸识别、身份匹配、Face ID 身份验证、面部画像、表情或情绪分析、广告定向或模型训练。
+
+所有分析均通过 Apple Vision、随应用提供的姿态模型及 ONNX Runtime 在用户设备上完成。单次推理产生且未保存的中间数据会在分析完成或取消后释放。为了让用户重新打开分析结果或教练指导项目，本应用可能在应用沙盒内保存包含有限头部区域姿态点的本地姿态缓存或项目数据；姿态缓存的有效期为 7 天，具体保存期限和删除方式见第 7 节。本应用的分析流程不会把任何面部数据、视频、图片、关键帧或姿态坐标发送给开发者、Microsoft、广告平台、分析服务、数据经纪商或其他第三方服务器。
+
+本应用不会自动向第三方共享面部数据。只有当用户主动点击保存、导出或使用 iOS 系统分享面板时，包含可见面部的图片或视频副本才会发送至用户选择的相册、文件位置或第三方应用。原始面部或头部区域姿态坐标不会作为独立数据共享。导出副本由用户选择的接收位置或第三方应用管理。
+
 ## 5. 教练指导
 
 你可以从自己的相册选择投球或挥棒视频，直接建立教练指导项目，无需先提交 AI 分析。你也可以从已有的本地分析结果进入教练指导。
@@ -91,19 +101,25 @@ SlyMask 棒球（以下简称“本应用”）由个人开发者开发和维护
 
 ### 7.1 保存期限
 
-应用数据默认保存在你的设备，直至你主动删除相关内容或卸载本应用。数据可能保存在 UserDefaults、应用沙盒文件或本地数据库中。
+应用数据仅保存在你的设备，可能位于运行内存、UserDefaults、应用沙盒文件、缓存目录或本地数据库中。不同类型数据的保存期限如下：
+
+- 仅用于单次模型推理、且不属于分析结果的中间缓冲数据会在该次推理结束或分析取消后释放；当前分析结果中的姿态数据只在用户查看当前结果期间保留在运行内存中，并在用户更换视频、重置分析或离开相关功能后释放。保存到本地缓存或教练指导项目的数据适用下述期限；
+- 为分析而创建的临时视频副本会在你更换视频、重置分析或离开相关功能后删除；因中断而遗留且超过 24 小时的受管临时文件会在下次初始化分析功能时清理，iOS 也可能更早清理临时文件；
+- 本地姿态缓存可能包含有限的头部区域姿态点，其有效期为自最近访问起 7 天，并受 100 MB 总容量上限限制；过期或较旧的缓存会在缓存维护时删除，也可以通过“我的—数据管理—清除所有本地数据”立即清除；
+- 分析历史最多保留 100 条记录。达到上限后，最旧的记录、对应关键帧及与其关联的教练指导项目会自动删除；
+- 用户保存的关键帧、球员图片、比赛和训练记录，以及独立保存的教练指导项目中的源视频、姿态数据、语音和标注，会保留在设备上，直至用户删除相关内容、清除所有本地数据、关联记录被自动清理或卸载本应用。
 
 ### 7.2 删除方式
 
 - 你可以在相应记录、分析历史或教练指导项目页面删除单条内容。
-- 你可以在“我的—数据管理”中清除本应用保存的本地数据，包括教练指导项目及其视频、语音和标注。
+- 你可以在“我的—数据管理”中清除本应用保存的本地数据，包括姿态缓存、分析历史、关键帧、球员图片、教练指导项目及其视频、姿态数据、语音和标注。
 - 卸载本应用通常会删除其应用容器中的本地数据。
 - 订阅和永久购买记录由 Apple 管理，不会因为卸载应用或清除本地数据而自动取消；重新安装后可以通过 Apple 恢复购买。
 - 为防止免费额度或分享奖励被异常重复领取，少量本地计数可能与普通内容分开管理，但仍只保存在本地设备上。
 
 ### 7.3 缓存和导出副本
 
-视频分析、关键帧、导出和分享过程中可能产生缓存或临时文件，系统或应用会按功能需要清理。
+视频分析、关键帧、导出和分享过程中可能产生缓存或临时文件。姿态缓存按照第 7.1 节所述期限和容量规则清理。其他临时导出文件仅位于应用临时目录，不用于长期保存，并可能由本应用或 iOS 在不再需要时清理；卸载本应用会移除应用容器内的副本。
 
 已保存到系统相册、文件 App，或已发送到微信等第三方应用的导出副本，不再由本应用控制。如需删除，请在相应位置或第三方应用中自行操作。
 
@@ -228,6 +244,18 @@ Pitching and batting analysis runs on your device using Apple system frameworks,
 
 Motion analysis is training-support information. Results may be affected by camera angle, distance, lighting, occlusion, frame rate, people in the background, and device performance. The results are not medical advice, an injury diagnosis, or a substitute for professional coaching.
 
+### 4.1 Face Data
+
+SlyMask Baseball does not collect or transmit face data to the developer or any server. When a user deliberately selects a video for motion analysis, limited nose, ear, and head-region pose points may be processed locally only for body-skeleton alignment and athlete movement tracking. The App does not perform face recognition, biometric identification, authentication, profiling, advertising, emotion analysis, or model training. Intermediate data is discarded after analysis, pose cache data expires after 7 days, and user-saved key frames or coaching projects remain only on the device until deleted by the user or the App is uninstalled. Face data is never automatically shared with third parties.
+
+Videos deliberately selected by the user for pitching or batting analysis, key-frame images generated from those videos, and player images deliberately selected by the user may contain a visible face. The face-related information processed by the App is limited to nose, left-ear, and right-ear coordinates and confidence values in the 2D fallback path, and top-of-head and center-of-head points in the 3D path. Player images are stored only as user-selected local avatars; the App does not perform facial analysis on player avatars.
+
+These limited pose points are used only for body-skeleton alignment, main-athlete tracking, baseball motion-metric calculation, and skeleton overlays in coach reviews. The App does not create a face mesh, faceprint, facial-feature template, or any other facial biometric identifier. It does not perform facial recognition, identity matching, Face ID authentication, facial profiling, expression or emotion analysis, advertising targeting, or model training.
+
+All analysis is performed on the user's device through Apple Vision, the pose model bundled with the App, and ONNX Runtime. Unsaved intermediate data from an inference operation is released when analysis completes or is cancelled. To let the user reopen an analysis result or coach-review project, the App may store local pose cache or project data containing limited head-region pose points inside the App sandbox. The pose cache has a seven-day expiration period; complete retention and deletion details are provided in Section 7. The App's analysis process does not transmit face data, videos, photos, key frames, or pose coordinates to the developer, Microsoft, advertising platforms, analytics services, data brokers, or any other third-party server.
+
+The App does not automatically share face data with any third party. Only when the user deliberately chooses Save, Export, or Share through the iOS system share sheet can a copy of an image or video containing a visible face be sent to the photo library, file location, or third-party app selected by the user. Raw facial or head-region pose coordinates are not shared as a separate data set. Exported copies are controlled by the destination or third-party app selected by the user.
+
 ## 5. Coach Reviews
 
 You can select your own pitching or batting video from the photo library and create a coach-review project without first submitting the video for AI analysis. You can also enter coach review from an existing on-device analysis result.
@@ -256,19 +284,25 @@ We cannot access your Apple ID password, card number, payment password, or compl
 
 ### 7.1 Retention
 
-App data remains on your device by default until you delete the relevant content or uninstall the App. Data may be stored in UserDefaults, App sandbox files, or a local database.
+App data remains only on your device and may be held in volatile memory, UserDefaults, App sandbox files, the cache directory, or a local database. Retention depends on the data type:
+
+- Intermediate buffers used only for a single model inference and not retained as analysis results are released after that inference or when analysis is cancelled. Pose data for the current result remains in volatile memory only while the user views that result and is released when the user replaces the video, resets the analysis, or leaves the relevant feature. Data saved to local cache or a coach-review project follows the retention periods below.
+- Temporary video copies created for analysis are deleted when you replace the video, reset the analysis, or leave the relevant feature. Managed temporary files left by an interruption and older than 24 hours are removed the next time the analysis feature is initialized; iOS may remove temporary files earlier.
+- The local pose cache may contain limited head-region pose points. It expires seven days after the most recent access and is limited to 100 MB in total. Expired or older entries are removed during cache maintenance and can be cleared immediately through Profile — Data Management — Clear All Local Data.
+- Analysis history retains no more than 100 records. When that limit is exceeded, the oldest record, its key-frame images, and any linked coach-review project are deleted automatically.
+- User-saved key frames, player images, game and training records, and independently saved coach-review source videos, pose data, narration, and annotations remain on the device until the user deletes the relevant content, clears all local data, the linked record is automatically removed, or the App is uninstalled.
 
 ### 7.2 Deletion
 
 - You can delete individual records, analysis history, or coach-review projects from the relevant screen.
-- You can use Profile — Data Management to clear locally stored App data, including coach-review projects and their videos, narration, and annotations.
+- You can use Profile — Data Management to clear locally stored App data, including pose cache, analysis history, key frames, player images, and coach-review projects and their videos, pose data, narration, and annotations.
 - Uninstalling the App normally removes data in its local container.
 - Subscriptions and lifetime-purchase records are managed by Apple and are not automatically cancelled when you uninstall the App or clear local data. You can restore purchases through Apple after reinstalling.
 - To prevent abnormal repeated redemption of free quotas or share rewards, a small number of local counters may be managed separately from ordinary content, but they still remain only on the device.
 
 ### 7.3 Cache and Exported Copies
 
-Video analysis, key-frame extraction, export, and sharing may create cache or temporary files. The system or App removes those files as needed.
+Video analysis, key-frame extraction, export, and sharing may create cache or temporary files. Pose cache is removed under the time and size rules in Section 7.1. Other temporary export files exist only in the App's temporary directory, are not intended for long-term storage, and may be removed by the App or iOS when no longer needed; uninstalling the App removes copies remaining inside the App container.
 
 Copies saved to the photo library or Files app, or sent to WeChat or another third-party app, are no longer controlled by the App. Delete those copies from the corresponding location or third-party app when necessary.
 
